@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="sieci"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sieci">
+				<Option output="/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/sieci" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 sieci"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sieci/fast">
+				<Option output="/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/sieci" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 sieci/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/c/Users/Marce/CLionProjects/sieci/config.cpp">
+			<Option target="sieci"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Marce/CLionProjects/sieci/config.h">
+			<Option target="sieci"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Marce/CLionProjects/sieci/icmp_packet.cpp">
+			<Option target="sieci"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Marce/CLionProjects/sieci/icmp_packet.h">
+			<Option target="sieci"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Marce/CLionProjects/sieci/icmp_receiver.cpp">
+			<Option target="sieci"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Marce/CLionProjects/sieci/icmp_receiver.h">
+			<Option target="sieci"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Marce/CLionProjects/sieci/main.cpp">
+			<Option target="sieci"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Marce/CLionProjects/sieci/traceroute.cpp">
+			<Option target="sieci"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Marce/CLionProjects/sieci/traceroute.h">
+			<Option target="sieci"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Marce/CLionProjects/sieci/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
