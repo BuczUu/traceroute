@@ -1,31 +1,35 @@
-# Kompilator
+# Kompilator i flagi
 CXX = g++
-# Flagi kompilacji
-CXXFLAGS = -std=c++17 -Wall -Wextra -pedantic
+CXXFLAGS = -std=c++17 -Wall -Wextra
+
 # Nazwa pliku wykonywalnego
-TARGET = traceroute
+TARGET = program
+
 # Pliki źródłowe
 SRCS = main.cpp traceroute.cpp icmp_packet.cpp icmp_receiver.cpp
-# Pliki obiektowe
+
+# Pliki obiektowe (generowane automatycznie)
 OBJS = $(SRCS:.cpp=.o)
 
 # Reguła domyślna
 all: $(TARGET)
-	sudo setcap cap_net_raw+ep $(TARGET)  # Nadaj uprawnienia po kompilacji
+# //g++ main.cpp traceroute.cpp icmp_packet.cpp icmp_receiver.cpp -o traceroute -std=c++17 -Wall -Wextra
 
 # Kompilacja pliku wykonywalnego
 $(TARGET): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
 
-# Kompilacja plików źródłowych do plików obiektowych
+# Reguła dla plików obiektowych
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-# Czyszczenie plików obiektowych i wykonywalnego
+# Czyszczenie plików obiektowych
 clean:
-	rm -f $(OBJS) $(TARGET)
-	sudo setcap -r $(TARGET)  # Usuń uprawnienia cap_net_raw
+	rm -f $(OBJS)
 
-# Uruchomienie programu
-run: $(TARGET)
-	./$(TARGET) 8.8.8.8  # Przykładowy adres IP do testowania
+# Czyszczenie plików obiektowych i wykonywalnego
+distclean: clean
+	rm -f $(TARGET)
+
+# Phony targets (nie są plikami)
+.PHONY: all clean distclean
