@@ -38,7 +38,7 @@ void ICMPReceiver::processPacket(std::vector<std::string>& ips, std::vector<int>
     struct iphdr* ip_hdr = (struct iphdr*)buffer;
     int ip_header_len = ip_hdr->ihl * 4;
 
-    if (bytes < ip_header_len + sizeof(icmphdr)) return;  // za mało danych żeby był to pakiet ICMP
+    if (bytes < static_cast<ssize_t>(ip_header_len + sizeof(icmphdr))) return;  // za mało danych żeby był to pakiet ICMP
 
     struct icmphdr* icmp_hdr = (struct icmphdr*)(buffer + ip_header_len);
 

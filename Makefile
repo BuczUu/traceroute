@@ -24,7 +24,6 @@ $(TARGET): $(OBJS)
 # Czyszczenie plików obiektowych i wykonywalnego
 clean:
 	rm -f $(OBJS) $(TARGET)
-	sudo setcap -r $(TARGET)  # Usuń uprawnienia cap_net_raw
 
 # Uruchomienie programu
 run: $(TARGET)
