@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/Marce/CLionProjects/sieci/config.cpp" "CMakeFiles/sieci.dir/config.cpp.o" "gcc" "CMakeFiles/sieci.dir/config.cpp.o.d"
   "/mnt/c/Users/Marce/CLionProjects/sieci/icmp_packet.cpp" "CMakeFiles/sieci.dir/icmp_packet.cpp.o" "gcc" "CMakeFiles/sieci.dir/icmp_packet.cpp.o.d"
   "/mnt/c/Users/Marce/CLionProjects/sieci/icmp_receiver.cpp" "CMakeFiles/sieci.dir/icmp_receiver.cpp.o" "gcc" "CMakeFiles/sieci.dir/icmp_receiver.cpp.o.d"
   "/mnt/c/Users/Marce/CLionProjects/sieci/main.cpp" "CMakeFiles/sieci.dir/main.cpp.o" "gcc" "CMakeFiles/sieci.dir/main.cpp.o.d"

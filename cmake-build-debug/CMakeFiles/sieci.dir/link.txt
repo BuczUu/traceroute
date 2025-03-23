@@ -1,1 +1,1 @@
-/usr/bin/g++ -g CMakeFiles/sieci.dir/main.cpp.o CMakeFiles/sieci.dir/icmp_packet.cpp.o CMakeFiles/sieci.dir/icmp_receiver.cpp.o CMakeFiles/sieci.dir/traceroute.cpp.o CMakeFiles/sieci.dir/config.cpp.o -o sieci 
+/usr/bin/g++ -g CMakeFiles/sieci.dir/main.cpp.o CMakeFiles/sieci.dir/icmp_packet.cpp.o CMakeFiles/sieci.dir/icmp_receiver.cpp.o CMakeFiles/sieci.dir/traceroute.cpp.o -o sieci 

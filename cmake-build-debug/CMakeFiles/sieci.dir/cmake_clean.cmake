@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/sieci.dir/config.cpp.o"
-  "CMakeFiles/sieci.dir/config.cpp.o.d"
   "CMakeFiles/sieci.dir/icmp_packet.cpp.o"
   "CMakeFiles/sieci.dir/icmp_packet.cpp.o.d"
   "CMakeFiles/sieci.dir/icmp_receiver.cpp.o"
