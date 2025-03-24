@@ -1,3 +1,5 @@
+// Marceli Buczek 339966
+
 #include "icmp_packet.h"
 #include <cassert>
 #include <iostream>
@@ -24,9 +26,6 @@ void ICMPPacket::send(const sockaddr_in& dest_addr, int seq,int ttl) {
     }
 }
 
-// oblicz sumę kontrolną dla nagłówka ICMP
-// po co to jest?
-// po to: https://en.wikipedia.org/wiki/IPv4_header_checksum
 uint16_t ICMPPacket::computeChecksum(void* buff, int length) {
     uint32_t sum = 0;
     uint16_t* ptr = static_cast<uint16_t*>(buff);

@@ -116,115 +116,6 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named sieci
-
-# Build rule for target.
-sieci: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sieci
-.PHONY : sieci
-
-# fast build rule for target.
-sieci/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sieci.dir/build.make CMakeFiles/sieci.dir/build
-.PHONY : sieci/fast
-
-icmp_packet.o: icmp_packet.cpp.o
-.PHONY : icmp_packet.o
-
-# target to build an object file
-icmp_packet.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sieci.dir/build.make CMakeFiles/sieci.dir/icmp_packet.cpp.o
-.PHONY : icmp_packet.cpp.o
-
-icmp_packet.i: icmp_packet.cpp.i
-.PHONY : icmp_packet.i
-
-# target to preprocess a source file
-icmp_packet.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sieci.dir/build.make CMakeFiles/sieci.dir/icmp_packet.cpp.i
-.PHONY : icmp_packet.cpp.i
-
-icmp_packet.s: icmp_packet.cpp.s
-.PHONY : icmp_packet.s
-
-# target to generate assembly for a file
-icmp_packet.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sieci.dir/build.make CMakeFiles/sieci.dir/icmp_packet.cpp.s
-.PHONY : icmp_packet.cpp.s
-
-icmp_receiver.o: icmp_receiver.cpp.o
-.PHONY : icmp_receiver.o
-
-# target to build an object file
-icmp_receiver.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sieci.dir/build.make CMakeFiles/sieci.dir/icmp_receiver.cpp.o
-.PHONY : icmp_receiver.cpp.o
-
-icmp_receiver.i: icmp_receiver.cpp.i
-.PHONY : icmp_receiver.i
-
-# target to preprocess a source file
-icmp_receiver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sieci.dir/build.make CMakeFiles/sieci.dir/icmp_receiver.cpp.i
-.PHONY : icmp_receiver.cpp.i
-
-icmp_receiver.s: icmp_receiver.cpp.s
-.PHONY : icmp_receiver.s
-
-# target to generate assembly for a file
-icmp_receiver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sieci.dir/build.make CMakeFiles/sieci.dir/icmp_receiver.cpp.s
-.PHONY : icmp_receiver.cpp.s
-
-main.o: main.cpp.o
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sieci.dir/build.make CMakeFiles/sieci.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sieci.dir/build.make CMakeFiles/sieci.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sieci.dir/build.make CMakeFiles/sieci.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-traceroute.o: traceroute.cpp.o
-.PHONY : traceroute.o
-
-# target to build an object file
-traceroute.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sieci.dir/build.make CMakeFiles/sieci.dir/traceroute.cpp.o
-.PHONY : traceroute.cpp.o
-
-traceroute.i: traceroute.cpp.i
-.PHONY : traceroute.i
-
-# target to preprocess a source file
-traceroute.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sieci.dir/build.make CMakeFiles/sieci.dir/traceroute.cpp.i
-.PHONY : traceroute.cpp.i
-
-traceroute.s: traceroute.cpp.s
-.PHONY : traceroute.s
-
-# target to generate assembly for a file
-traceroute.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sieci.dir/build.make CMakeFiles/sieci.dir/traceroute.cpp.s
-.PHONY : traceroute.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -233,19 +124,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... sieci"
-	@echo "... icmp_packet.o"
-	@echo "... icmp_packet.i"
-	@echo "... icmp_packet.s"
-	@echo "... icmp_receiver.o"
-	@echo "... icmp_receiver.i"
-	@echo "... icmp_receiver.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... traceroute.o"
-	@echo "... traceroute.i"
-	@echo "... traceroute.s"
 .PHONY : help
 
 

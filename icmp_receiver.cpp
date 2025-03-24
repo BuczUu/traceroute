@@ -1,3 +1,5 @@
+// Marceli Buczek 339966
+
 #include "icmp_receiver.h"
 #include <poll.h>
 #include <iostream>
@@ -28,7 +30,6 @@ std::pair<std::vector<std::string>, std::vector<int>> ICMPReceiver::receive(cons
 
         processPacket(ips, times, buffer, bytes, send_times, received, sender);
     }
-
     return {ips, times};
 }
 
@@ -41,7 +42,6 @@ void ICMPReceiver::processPacket(std::vector<std::string>& ips, std::vector<int>
     if (bytes < static_cast<ssize_t>(ip_header_len + sizeof(icmphdr))) return;  // za mało danych żeby był to pakiet ICMP
 
     struct icmphdr* icmp_hdr = (struct icmphdr*)(buffer + ip_header_len);
-
     std::string sender_ip = inet_ntoa(sender.sin_addr);
     std::chrono::steady_clock::time_point recv_time = std::chrono::steady_clock::now();
     int duration;

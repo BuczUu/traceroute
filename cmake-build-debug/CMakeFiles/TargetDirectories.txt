@@ -1,3 +1,2 @@
-/mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/CMakeFiles/sieci.dir
 /mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/CMakeFiles/edit_cache.dir
 /mnt/c/Users/Marce/CLionProjects/sieci/cmake-build-debug/CMakeFiles/rebuild_cache.dir

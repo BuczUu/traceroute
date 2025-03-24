@@ -1,6 +1,9 @@
+// Marceli Buczek 339966
+
 #include "traceroute.h"
 #include <iostream>
 #include <chrono>
+
 #include <algorithm>
 
 Traceroute::Traceroute(const std::string& target_ip)
@@ -16,7 +19,7 @@ void Traceroute::run() {
     dest_addr.sin_family = AF_INET;
     if (inet_pton(AF_INET, target_ip.c_str(), &dest_addr.sin_addr) != 1) {
         std::cerr << "Niepoprawny adres IP" << std::endl;
-        return;
+        exit(1);
     }
 
     for (int ttl = 1; ttl <= MAX_TTL; ++ttl) {
@@ -25,7 +28,6 @@ void Traceroute::run() {
             icmp_packet.send(dest_addr, i, ttl);
             send_times[i] = std::chrono::steady_clock::now();
         }
-
         std::pair<std::vector<std::string>, std::vector<int>> result = icmp_receiver.receive(send_times);
         std::cout << ttl << ". ";
         printResults(result.first, result.second);
@@ -41,7 +43,6 @@ void Traceroute::printResults(std::vector<std::string>& ips, std::vector<int>& t
         return;
     }
     int n = ips.size();
-
     int avg_time = 0;
     for (int t : times) avg_time += t;
     avg_time /= n;
@@ -49,7 +50,8 @@ void Traceroute::printResults(std::vector<std::string>& ips, std::vector<int>& t
     std::sort(ips.begin(), ips.end());
     ips.erase(std::unique(ips.begin(), ips.end()), ips.end());
 
-    for (auto& ip : ips) std::cout << ip << " ";
+    for (std::string& ip : ips) std::cout << ip << " ";
+
     if (n < PACKETS_PER_TTL) {
         std::cout << "???" << std::endl;
         return;
